@@ -5,11 +5,7 @@ class ConversorDolares {
 
     }
 
-    @Override
-    public String toString() {
-        return "ConversorDolares [pesos=" + pesos + ", dolar=" + dolar + "]";
-    }
-
+    
     public double getPesos() {
         return pesos;
     }
@@ -25,10 +21,14 @@ class ConversorDolares {
     public void setDolar(double dolar) {
         this.dolar = dolar;
     }
-
-    public double mostrarConvercion() {
-
-        return this.pesos / this.dolar;
+    
+    public double mostrarConversion() {
+        
+        return this.pesos * this.dolar;
     }
-
+    @Override
+    public String toString() {
+        return "ConversorDolares [pesos=" + pesos + ", dolar=" + dolar + "]";
+    }
+    
 }

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class MainCirculo {
+class MainAreadelCirculo {
     public static void main(String[] args) {
         Scanner op = new Scanner(System.in);
         int a;
@@ -11,12 +11,11 @@ class MainCirculo {
             a = op.nextInt();
             if (a == 1) {
                 double area;
-                System.out.println("ingresa el radio del circulo: ");
+                System.out.println("ingresa el radio del circulo en cm: ");
                 area = op.nextDouble();
-                Circulo circulo = new Circulo();
+                AreadelCirculo circulo = new AreadelCirculo();
                 circulo.setArea(area);
-                circulo.setPi(3.1416);
-                System.out.println("El area del circulo es: " + circulo.mostrarResultado());
+                System.out.println("El area del circulo es: " + String.format("%.2f",circulo.mostrarResultado())+"cm");
             }
         } while (a > 0);
     }
